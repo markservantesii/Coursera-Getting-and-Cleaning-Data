@@ -2,10 +2,10 @@
 Coursera, Getting and Cleaning Data, Course Project
 
 ###Table of contents:
-+Objective
-+The Raw Data
-+Analysis Script: run_analysis.R
-+Other Notes
+- Objective
+- Files
+- Analysis Script: run_analysis.R
+- Other Notes
 
 ## Objective
 The main objective is to create a single, tidy set of data which summarizes the average 
@@ -13,33 +13,32 @@ of mean and standard deviation measurements from the data provided
 at this link:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-## The Raw Data
-The data contain accelerometer and gyroscope measurements of 30 individuals performing
-six different activities: Sitting, standing, walking, laying, walking up stairs, 
-and walking downstairs.
-
-The data, as given, is spread across several files. We are interested in the following
-files:
-
-**Measurement data:**
-+X_train.txt
-+y_train.txt
-+X_test.txt
-+y_test.txt
-
-**Variable names:**
-+features.txt
-
-**Subject ID's:**
-+subject_test.txt
-+subject_train.txt
-
-These files should be placed in the same working directory as the run_analysis.R script.
+## Files
+The following files are included in this project:
+- README.md
+- CodeBook.md
+- run_analysis.R
+- tidy.txt
 
 ## Analysis Script: run_analysis.R
 The run_analysis.R script takes the raw data and creates a single tidy data set,
-containing the average measurement value for each subject and each activity. It works
-as follows (assuming the data files have been placed in the same working directory):
+containing the average measurement value for each subject and each activity. Before running
+the script, the following files should be placed in the same working directory:
+
+**Measurement data:**
++ X_train.txt
++ y_train.txt
++ X_test.txt
++ y_test.txt
+
+**Variable names:**
++ features.txt
+
+**Subject ID's:**
++ subject_test.txt
++ subject_train.txt
+
+Assuming that these files have been placed in the same working directory, the script does the following:
 
 1. Load the necessary libraries: data.table, tidyr, dplyr
 

@@ -29,13 +29,13 @@ The data.table, dplyr, and tidyr libraries are used for reading, manipulating an
 The data, as given, is spread across several files. We are only interested in the following
 files:
 
-+X_train.txt
-+y_train.txt
-+X_test.txt
-+y_test.txt
-+features.txt
-+subject_test.txt
-+subject_train.txt
++ X_train.txt
++ y_train.txt
++ X_test.txt
++ y_test.txt
++ features.txt
++ subject_test.txt
++ subject_train.txt
 
 These files are moved to the same working directory as the run_analysis.R script.
 Each of these is then read in using read.table(... , as.is=TRUE).
@@ -46,10 +46,10 @@ The features.txt file contains the variable names for each measurement, and the 
 ## Combining Test and Training Data
 
 The training and test data sets are combined first using bind_rows(), leaving three sets of data:
-+X data is stored in variable "x"
-+y data is stored in variable "y"
-+subject id's are stored in variable "subid"
-+Measurement variable names are stored in variable "varnames"
++ X data is stored in variable "x"
++ y data is stored in variable "y"
++ subject id's are stored in variable "subid"
++ Measurement variable names are stored in variable "varnames"
 
 ## Cleaning the Data
 
@@ -64,12 +64,12 @@ This produces "." in the variable names, so they are removed using gsub(). As an
 
 The "y" data is transformed using a user-defined function "actid". It replaces the activity id with the appropriate label as follows:
 
-1-walking
-2-walking upstairs
-3-walking downstairs
-4-sitting
-5-standing
-6-laying
+- 1-walking
+- 2-walking upstairs
+- 3-walking downstairs
+- 4-sitting
+- 5-standing
+- 6-laying
 
 Next, the "x" and "y" data is combined using bind_cols(). Then the "subid" data is added.
 
