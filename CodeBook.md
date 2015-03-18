@@ -4,12 +4,12 @@ Coursera, Getting and Cleaning Data, Course Project
 This code book describes the data, variables and transformations used to create a single tidy data set.
 
 **Table of Contents:**
-+Raw Data
-+Libraries
-+Reading the Data
-+Combining Test and Training Data
-+Cleaning the Data
-+Final Data
++ Raw Data
++ Packages
++ Reading the Data
++ Combining Test and Training Data
++ Cleaning the Data
++ Final Data
 
 ## Raw Data
 
@@ -22,8 +22,8 @@ six different activities: Sitting, standing, walking, laying, walking up stairs,
 and walking downstairs. For a more complete description of the raw data, please see the features_info.txt file included
 in the raw data.
 
-## Libraries
-The data.table, dplyr, and tidyr libraries are used for reading, manipulating and tidying the raw data.
+## Packages
+The data.table, dplyr, and tidyr packages are used for reading, manipulating and tidying the raw data.
 
 ## Reading the data
 The data, as given, is spread across several files. We are only interested in the following
